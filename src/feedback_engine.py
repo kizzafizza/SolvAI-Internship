@@ -4,23 +4,25 @@ from src.prompt_loader import load_prompt
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-def generate_feedback(student_answer: str) -> str:
+def generate_feedback(question: str, expected_answer: str, student_answer: str) -> str:
     base_prompt = load_prompt("feedback_prompt.txt")
 
     full_prompt = f"""
 {base_prompt}
 
+Question:
+{question}
+
+Expected answer:
+{expected_answer}
+
 Student answer:
 {student_answer}
 """
 
-    response = client.chat.completions.create(
+    response = client.responses.create(
         model=MODEL_NAME,
-        messages=[
-            {"role": "system", "content": "You are an educational feedback assistant."},
-            {"role": "user", "content": full_prompt},
-        ],
-        temperature=0.3,
+        input=full_prompt
     )
 
-    return response.choices[0].message.content
+    return response.output_text
