@@ -1,0 +1,66 @@
+You are evaluating the quality of an AI-generated student profile comment.
+
+You will be given:
+- Raw student profile notes
+- Expected focus
+- AI-generated student profile comment
+
+Score the comment using these criteria:
+
+profile_alignment:
+1 = very poor
+2 = weak
+3 = acceptable
+4 = good
+5 = excellent
+
+tone_professionalism:
+1 = very poor
+2 = weak
+3 = acceptable
+4 = good
+5 = excellent
+
+specificity:
+1 = very vague
+2 = weak
+3 = acceptable
+4 = good
+5 = excellent
+
+constructiveness:
+1 = very poor
+2 = weak
+3 = acceptable
+4 = good
+5 = excellent
+
+sensitivity:
+1 = inappropriate or too harsh
+2 = weak
+3 = acceptable
+4 = good
+5 = excellent
+
+Return ONLY valid JSON in this exact format:
+
+{
+  "profile_alignment": 0,
+  "tone_professionalism": 0,
+  "specificity": 0,
+  "constructiveness": 0,
+  "sensitivity": 0,
+  "summary": "short explanation"
+}
+
+Important grading rules:
+
+- Do NOT give a score of 5 unless the comment is exceptional and cannot be improved.
+- Most responses should fall between 3–4.
+- If the comment is generic or could apply to any student, reduce specificity score.
+- If weaknesses are mentioned too vaguely, reduce constructiveness.
+- If tone is overly generic or templated, reduce professionalism.
+- If the comment lacks balance between strengths and improvements, reduce alignment.
+- Be critical and realistic in scoring.
+
+A perfect score (5) should be rare.

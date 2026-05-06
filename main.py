@@ -28,10 +28,11 @@ with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as file:
         "Expected Answer",
         "Student Answer",
         "AI Feedback",
-        "Accuracy",
-        "Relevance",
-        "Clarity",
-        "Helpfulness",
+        "Student Answer Correctness",
+        "Feedback Accuracy",
+        "Feedback Relevance",
+        "Feedback Clarity",
+        "Feedback Helpfulness",
         "Summary"
     ])
 
@@ -64,7 +65,8 @@ with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as file:
             evaluation["feedback_accuracy"],
             evaluation["feedback_relevance"],
             evaluation["feedback_clarity"],
-            evaluation["feedback_helpfulness"]
+            evaluation["feedback_helpfulness"],
+            evaluation["summary"]
         ])
 
         print("\n==============================")
