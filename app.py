@@ -192,17 +192,22 @@ with tab3:
             results = []
 
             for _, row in combined_df.iterrows():
+                student_id = row["student_id"]
+                student_name = row["student_name"]
                 student_profile = row["student_profile"]
                 academic_result = row["academic_result"]
                 academic_feedback = row["academic_feedback"]
 
                 final_report = generate_combined_report(
+                    student_name,
                     student_profile,
                     academic_result,
                     academic_feedback
                 )
 
                 results.append({
+                    "Student ID": student_id,
+                    "Student Name": student_name,
                     "Student Profile": student_profile,
                     "Academic Result": academic_result,
                     "Academic Feedback": academic_feedback,
