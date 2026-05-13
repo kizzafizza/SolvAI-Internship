@@ -39,7 +39,7 @@ The system aims to help students improve their answers by identifying:
 - Python
 - OpenAI / LLM APIs
 - Pydantic / Agent Frameworks
-- Streamlit (planned)
+- Streamlit
 - Git / GitHub
 
 ---
