@@ -20,6 +20,7 @@ with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
 
     writer.writerow([
+        "Student Name",
         "Student Profile",
         "Expected Focus",
         "Generated Comment",
@@ -32,6 +33,7 @@ with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as file:
     ])
 
     for case in test_cases:
+        student_name = case["student_name"]
         student_profile = case["student_profile"]
         expected_focus = case["expected_focus"]
 
@@ -39,6 +41,7 @@ with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as file:
         # generated_comment = "The Student is good and doing well"
 
         generated_comment = generate_profile_comment(
+            student_name,
             student_profile,
             expected_focus
         )
@@ -50,6 +53,7 @@ with open(OUTPUT_FILE, mode="w", newline="", encoding="utf-8") as file:
         )
 
         writer.writerow([
+            student_name,
             student_profile,
             expected_focus,
             generated_comment,

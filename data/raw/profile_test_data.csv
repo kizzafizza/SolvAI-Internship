@@ -1,4 +1,4 @@
-student_profile,expected_focus
-"Quiet achiever, works independently, sometimes drifts off, does not contribute often to class discussions, English satisfactory, Maths satisfactory","Create a professional student profile comment that highlights independence, quiet nature, need for encouragement in discussions, and steady academic performance."
-"Confident student, strong speaker, helpful in class, sometimes calls out, needs reminders to wait turn","Create a balanced comment highlighting confidence and leadership while gently addressing impulse control."
-"Kind student, needs check-ins, struggles with maths, improved reading and writing, benefits from support","Create a supportive comment highlighting progress, support needs, and next learning goals."
+student_id,student_name,student_profile,expected_focus
+S001,Phil Mcrackin,"Quiet achiever, works independently, sometimes drifts off, does not contribute often to class discussions, English satisfactory, Maths satisfactory","Create a professional student profile comment that highlights independence, quiet nature, need for encouragement in discussions, and steady academic performance."
+S002,Mike Oxlong,"Confident student, strong speaker, helpful in class, sometimes calls out, needs reminders to wait turn","Create a balanced comment highlighting confidence and leadership while gently addressing impulse control."
+S003,Hugh Jas,"Kind student, needs check-ins, struggles with maths, improved reading and writing, benefits from support","Create a supportive comment highlighting progress, support needs, and next learning goals."

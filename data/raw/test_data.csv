@@ -1,7 +1,6 @@
-question,expected_answer,student_answer
-How many hearts do octopuses have?,Octopuses have three hearts.,Octopuses have three hearts.
-How many hearts do octopuses have?,Octopuses have three hearts.,Octopuses have two hearts.
-How do octopuses breathe?,Octopuses breathe using gills.,Octopuses breathe using lungs.
-How many fingers do most people usually have?,Most people usually have ten fingers.,The sky is blue.
-What colour is octopus blood?,Octopus blood is blue because it contains copper-based hemocyanin.,Octopus blood is blue.
-What do octopuses use their arms for?,Octopuses use their arms to move, explore, catch food, and manipulate objects.,Octopuses use their arms to swim and grab things.
+student_id,student_name,question,expected_answer,student_answer
+S001,Phil Mcrackin,"How many hearts do octopuses have?","Octopuses have three hearts.","Octopuses have three hearts."
+S002,Mike Oxlong,"What colour is octopus blood?","Octopus blood is blue because it contains hemocyanin.","Octopus blood is blue."
+S003,Hugh Jas,"How do octopuses breathe?","Octopuses breathe using gills.","Octopuses breathe using lungs."
+S004,Wi Tu Lu,"How many fingers do most people have?","Most people usually have ten fingers.","The sky is blue."
+S005,Ho Lee Fook,"What is 5 + 7?","12","13"

@@ -51,6 +51,8 @@ with tab1:
             results = []
 
             for _, row in academic_df.iterrows():
+                student_id = row["student_id"]
+                student_name = row["student_name"]
                 question = row["question"]
                 expected_answer = row["expected_answer"]
                 student_answer = row["student_answer"]
@@ -69,6 +71,8 @@ with tab1:
                 )
 
                 results.append({
+                    "Student ID": student_id,
+                    "Student Name": student_name,
                     "Question": question,
                     "Expected Answer": expected_answer,
                     "Student Answer": student_answer,
@@ -119,10 +123,13 @@ with tab2:
             results = []
 
             for _, row in profile_df.iterrows():
+                student_id = row["student_id"]
+                student_name = row["student_name"]
                 student_profile = row["student_profile"]
                 expected_focus = row["expected_focus"]
 
                 generated_comment = generate_profile_comment(
+                    student_name,
                     student_profile,
                     expected_focus
                 )
@@ -134,6 +141,8 @@ with tab2:
                 )
 
                 results.append({
+                    "Student ID": student_id,
+                    "Student Name": student_name,
                     "Student Profile": student_profile,
                     "Expected Focus": expected_focus,
                     "Generated Comment": generated_comment,

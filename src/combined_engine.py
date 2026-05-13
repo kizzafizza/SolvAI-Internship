@@ -6,6 +6,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 def generate_combined_report(
+    student_name: str,
     student_profile: str,
     academic_result: str,
     academic_feedback: str
@@ -14,6 +15,9 @@ def generate_combined_report(
 
     full_prompt = f"""
 {base_prompt}
+
+Student name:
+{student_name}
 
 Student profile notes:
 {student_profile}
